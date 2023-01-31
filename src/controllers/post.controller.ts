@@ -8,10 +8,10 @@ import {
   Query,
   UseGuards,
 } from '@nestjs/common';
-import { PostService } from './post.service';
+import { PostService } from '../services/post.service';
 import { Post as PostModel, User } from '@prisma/client';
-import { HttpUser } from './User.decorator';
-import { UserGuard } from './user.guard';
+import { HttpUser } from '../decorators/user.decorator';
+import { UserGuard } from '../guard/user.guard';
 
 @Controller('post')
 export class PostController {

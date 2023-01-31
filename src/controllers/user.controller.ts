@@ -1,5 +1,5 @@
 import { Controller, Get, Post, Body, Req, Res } from '@nestjs/common';
-import { UserService } from './user.service';
+import { UserService } from '../services/user.service';
 import FastifyReply from 'fastify-cookie';
 import { FastifyRequest } from 'fastify';
 import { User as UserModel } from '@prisma/client';

@@ -2,7 +2,7 @@ import { BadRequestException, Injectable } from '@nestjs/common';
 
 import { User, Prisma } from '@prisma/client';
 import { PrismaService } from './app.service';
-import { BcryptService, JwtService } from './services';
+import { BcryptService, JwtService } from './index';
 
 @Injectable()
 export class UserService {

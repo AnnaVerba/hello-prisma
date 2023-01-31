@@ -1,13 +1,12 @@
 import { Module } from '@nestjs/common';
-import { UserController } from './user.controller';
-import { PrismaService } from './app.service';
-import { PostService } from './post.service';
-import { UserService } from './user.service';
-import { PostController } from './post.controller';
+import { UserController } from './controllers/user.controller';
+import { PrismaService } from './services/app.service';
+import { PostService } from './services/post.service';
+import { UserService } from './services/user.service';
+import { PostController } from './controllers/post.controller';
 import { BcryptService, JwtService } from './services';
 
 @Module({
-  imports: [],
   controllers: [UserController, PostController],
   providers: [
     PrismaService,

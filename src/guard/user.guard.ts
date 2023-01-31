@@ -6,8 +6,8 @@ import {
   Injectable,
   UnauthorizedException,
 } from '@nestjs/common';
-import { PrismaService } from './app.service';
-import { JwtService } from './services';
+import { PrismaService } from '../services/app.service';
+import { JwtService } from '../services';
 
 @Injectable()
 export class UserGuard implements CanActivate {
